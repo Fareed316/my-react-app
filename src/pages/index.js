@@ -108,8 +108,8 @@ export default IndexPage
 
 export const query = graphql`
   query SiteTitleQuery {
-    site {
-      siteMetadata {
+    site: {
+      siteMetadata: {
         title
         description
         keywords
@@ -117,8 +117,8 @@ export const query = graphql`
     };
     
     allContentfulLink(sort:{ fields: [createdAt], order: ASC}){
-      edges{π
-        node {
+      edges:{π
+        node: {
           title
           url
           createdAt
