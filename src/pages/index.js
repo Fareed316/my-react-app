@@ -117,7 +117,7 @@ export const query = graphql`
     }
     
     allContentfulLink(sort:{ fields: [createdAt], order: ASC}){
-      edges{π
+      edges{
         node {
           title
           url
